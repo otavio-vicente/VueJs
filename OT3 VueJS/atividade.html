@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Vue JS - Diretivas v-model interligando formulário e dados</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ titulo }}</h1>
+        <label for="">Nome</label>
+        <input type="text" v-model="nome">
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="email" v-model="email">
+        <br><br>
+
+        <button type="submit" @click="showAlert">Enviar</button>
+        <hr>
+
+        Nome: {{ nome }}<br>
+        Email: {{ email }}<br>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Formulário Básico',
+                nome: "",
+                email: "",
+            },
+            methods: {
+                showAlert() {
+                    // Exibindo um alerta com nome e email
+                    alert(`Nome: ${this.nome}\nEmail: ${this.email}`);
+                }
+            }
+        });
+       
+
+    </script>
+
+</body>
+</html>

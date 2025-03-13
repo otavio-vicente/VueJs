@@ -12,8 +12,8 @@ Este repositório será atualizado conforme eu avanço nos estudos e adiciono no
 
 ```
 /VueJs
-│── DocsPDF
-|── OT'S
+│── /DocsPDF
+|── /OT'S
 │── README.md      # Este arquivo 📌
 ```
 
